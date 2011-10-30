@@ -1,0 +1,37 @@
+#conway-grid {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+	margin-bottom:5px !important;
+	width:240px;
+}
+#conway-grid td {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 1px solid #888888;
+    font-family: Tahoma;
+    font-size: 8px;
+    height: 12px;
+    line-height: 0.9;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 12px;
+}
+#conway-options {
+    font-family: "Tahoma";
+    font-size: 11px;
+    padding: 4px;
+}
+#conway-grid td:hover {
+    background: none repeat scroll 0 0 #333333;
+}
+#conway-options #demos {
+    height: 220px;
+}
+
+#conway-options #autostart, #conway-options #shownbors { margin:2px; }
+#conway-options label { display:inline; }
+
+#conway table { margin:0; }
+#conwayRecord { margin-right: 10px; }
+#conway .content-table { text-align:center; }
+#conway { float:left; margin:5px 5px 0 0; }

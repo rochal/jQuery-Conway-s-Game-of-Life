@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="conway.js"></script>
+		<script type="text/javascript" src="conway-demo.js"></script>
+		<link rel="stylesheet" type="text/css" href="conway.css" />
+		<style type="text/css">
+			body { font-family: Tahoma,sans-serif; font-size:12px; }
+		</style>
+	</head>
+	<body>
+		<div id="conway">
+			<table class="content-table" border="1">
+			<thead>
+			<tr><th>Grid</th><th>Options</th></tr>
+			</thead>
+				<tr>
+				<td valign="top">
+				<table id="conway-grid">
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				</table>
+
+				<table class="content-table" style="width:100%;">
+				<thead>
+				<tr><th>Recording</th></tr>
+				</thead>    
+				<tbody>
+				<tr><td>
+					<input id="conwayRecord" type="button" value="Record" />
+					<input id="conwayClear" type="button" value="Clear" />   
+				</td></tr>
+				<tr><td><div id="helper"></div></td></tr>
+				</tbody>
+				</table>
+
+
+				</td>
+				<td valign="top">
+
+			<table id="conway-options" border="1">
+			<tr>
+			<td colspan="2">
+				<select id="demos" multiple="multiple">
+					<optgroup label="Still lifes">
+						<option value="4">Block</option>
+						<option value="5">Beehive</option>
+						<option value="6">Loaf</option>
+						<option value="7">Boat</option>
+					</optgroup>           
+					<optgroup label="Oscillators">
+						<option value="0">Blinker</option>
+						<option value="1">Toad</option>
+						<option value="2">Beacon</option>
+						<option value="3" selected="selected">Pulsar</option>
+					</optgroup>
+					<optgroup label="Spaceships">
+						<option value="8">Glider</option>
+						<option value="9">Lightweight spaceship (LWSS)</option>
+						<option value="14">The Queen Bee Shuttle</option>
+					</optgroup>
+					<optgroup label="Other">
+						<option value="10">Small Exploder</option>
+						<option value="11">Exploder</option>
+						<option value="12">Row</option>
+						<option value="13">Tumbler</option>
+					</optgroup>           
+				</select>
+			</td>
+			</tr>
+			<tr>
+			<td colspan="2"><input type="checkbox" id="shownbors" /><label for="shownbors">Display amount of neighbours</label>
+			</td>
+			</tr>
+			<tr>
+			<td colspan="2"><input checked="checked" type="checkbox" id="autostart" /><label for="autostart">Autostart</label>
+			</td>
+			</tr>
+			<tr>
+			<td><b>Interval:</b></td>
+			<td width="68%">
+			<select id="interval">
+			<option value="100" selected="selected">100ms</option>
+			<option value="500">500ms</option>
+			<option value="1000">1000ms</option>
+			<option value="2000">2000ms</option>
+			</select>    
+			</td>
+			</tr>
+			<tr>
+			<td colspan="2" style="text-align:center;">
+			<input type="button" id="start" class="startStopButton" value="Start" />
+			</td>
+			</tr>
+			</table>
+
+
+				</td>
+				</tr>
+			</table>
+		</div>
+		
+		<script type="text/javascript">
+			var conway = new Conway();
+			$(function(){
+				//init all demo code
+				ConwayDemo();
+			});
+		</script>
+	</body>
+</html>
